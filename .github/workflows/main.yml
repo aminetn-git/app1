@@ -10,20 +10,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-      
-name: Super-L
-
-on: push
-
-jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
       - name: Run a one-line script
         run: echo Hello, world!
